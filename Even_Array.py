@@ -1,0 +1,12 @@
+n=int(input())
+l=list(map(int,input().strip().split()))[:n]
+c=0
+for i in range(0,len(l)):
+   if l[i]%2==0:
+      continue
+   elif l[i]%2!=0:
+       c+=1
+if c>0:
+   print("False")
+elif c==0:
+   print("True")
